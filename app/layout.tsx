@@ -1,10 +1,6 @@
-
 import './globals.css';
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
-import Navbar from '@/components/Navbar';
-import Sidebar from '@/components/Sidebar';
-import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: 'Bible App - Read & Study',
@@ -26,16 +22,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body className="bg-white dark:bg-dark text-dark dark:text-light">
-        <div className="flex h-screen overflow-hidden">
-          <Sidebar />
-          <div className="flex-1 flex flex-col">
-            <Navbar />
-            <main className="flex-1 overflow-y-auto">
-              {children}
-            </main>
-          </div>
-        </div>
-        <Toaster />
+        {children}
       </body>
     </html>
   );
