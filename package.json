@@ -7,8 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "lint": "next lint"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -22,18 +21,11 @@
     "autoprefixer": "^10.4.16",
     "zustand": "^4.4.7",
     "axios": "^1.6.2",
-    "prisma": "^5.7.0",
-    "@prisma/client": "^5.7.0",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.1.2",
-    "next-auth": "^5.0.0-beta.14",
     "lucide-react": "^0.344.0",
     "date-fns": "^2.30.0",
     "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.6",
-    "@types/jsonwebtoken": "^9.0.6",
     "eslint": "^8.55.0",
     "eslint-config-next": "^15.0.0"
   }
